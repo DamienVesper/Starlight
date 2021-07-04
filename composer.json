@@ -32,7 +32,7 @@
       "title": "Starlight",
       "category": "theme",
       "icon": {
-        "name": "fas fa-stars",
+        "name": "fas fa-rocket",
         "backgroundColor": "#7011ed",
         "color": "#fff"
       }
