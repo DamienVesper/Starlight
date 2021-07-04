@@ -37,5 +37,6 @@
         "color": "#fff"
       }
     }
-  }
+  },
+  "minimum-stability": "stable"
 }
