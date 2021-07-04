@@ -24,8 +24,8 @@ use Flarum\Frontend\Compiler\Source\SourceCollector;
 use TheTurk\Stargazing;
 
 return [
-    (new Extend\Frontend('admin'))
-        ->js(__DIR__ . '/js/dist/admin.js'),
+    // (new Extend\Frontend('admin'))
+        // ->js(__DIR__ . '/js/dist/admin.js'),
     (new Extend\Frontend('forum'))
         ->css(__DIR__ . '/less/forum.less'),
         // ->content(Stargazing\Listeners\AddAssets::class),
