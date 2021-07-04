@@ -1,0 +1,41 @@
+{
+  "name": "damienvesper/starlight",
+  "description": "A starlight theme for your forum.",
+  "keywords": [
+    "flarum",
+    "theme",
+    "stargazing"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.0.0"
+  },
+  "authors": [
+    {
+      "name": "DamienVesper",
+      "email": "ldamienvesper@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/DamienVesper/Starlight/issues",
+    "source": "https://github.com/DamienVesper/Starlight"
+  },
+  "autoload": {
+    "psr-4": {
+      "DamienVesper\\Starlight\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Starlight",
+      "category": "theme",
+      "icon": {
+        "name": "fas fa-stars",
+        "backgroundColor": "#7011ed",
+        "color": "#fff"
+      }
+    }
+  }
+}
