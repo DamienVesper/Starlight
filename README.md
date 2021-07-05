@@ -1,7 +1,7 @@
 # Starlight
  A fork of the Stargazing theme for Flarum, updated for compatibility.
 
-Disclaimer: I have no idea what I'm doing.
+**Disclaimer**: This port of the Stargazing theme is still in development and **NOT** ready for production. Enable at your own risk.
 
 ## Installation
 Add the repository to your `composer.json`:
