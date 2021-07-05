@@ -50,8 +50,8 @@ class AddAssets
       // bubbly-bg options
       $document->foot[] = <<<'JS'
 <script>
-window.onload = function(e){
-bubbly({
+window.onload = function(e) {
+    bubbly({
 blur: 0.7,
 bubbleFunc: () => `hsla(${Math.random() * 360}, 0%, 100%, ${Math.random() * 0.3})`,
 bubbles: 120,
