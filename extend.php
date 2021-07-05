@@ -27,7 +27,7 @@ return [
     (new Extend\Frontend('forum'))
         ->css(__DIR__.'/less/forum.less')
         ->js(__DIR__.'/js/dist/forum.js')
-        ->content(function Document $document) {
+        ->content(function(Document $document) {
             $document->body[] = '
             <script type="text/javascript" src="/assets/bubbly-bg.js"></script>
             window.onload = function (e) {
@@ -42,6 +42,6 @@ return [
                 });
             }
             ';
-        },
+        }),
         (new Extend\Locales(__DIR__ . '/locale'))
 ];
