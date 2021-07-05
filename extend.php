@@ -15,17 +15,17 @@
  * @link       https://github.com/the-turk/flarum-stargazing-theme
  */
 
-namespace TheTurk\Stargazing;
+// namespace TheTurk\Stargazing;
 
-use Flarum\Extend;
-use Flarum\Foundation\Application;
-use Flarum\Frontend\Assets;
-use Flarum\Frontend\Compiler\Source\SourceCollector;
+use Flarum;
+// use Flarum\Foundation\Application;
+// use Flarum\Frontend\Assets;
+// use Flarum\Frontend\Compiler\Source\SourceCollector;
 
 return [
-    (new Extend\Frontend('forum'))
+    (new Flarum\Extend\Frontend('forum'))
         ->css(__DIR__.'/less/forum.less')
-        ->js(__DIR__.'/js/dist/forum.js')
+        // ->js(__DIR__.'/js/dist/forum.js')
         ->content(function(Document $document) {
             $document->body[] = '
             <script type="text/javascript" src="/assets/bubbly-bg.js"></script>
@@ -42,5 +42,5 @@ return [
             }
             ';
         }),
-        (new Extend\Locales(__DIR__ . '/locale'))
+        (new Flarum\Extend\Locales(__DIR__ . '/locale'))
 ];
