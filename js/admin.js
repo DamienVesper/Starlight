@@ -1,1 +1,1 @@
-export * from './src/admin';
+// Nothing to extend for now.

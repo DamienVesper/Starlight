@@ -1,2 +1,5 @@
-# Node.JS node_modules
-js/node_modules
+# Node.JS
+node_modules
+
+# Sourcemaps
+*.map

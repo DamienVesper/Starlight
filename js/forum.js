@@ -1,1 +1,2 @@
-// nothing to extend here for now.
+// Export everything from the forum.
+export * from './src/forum';

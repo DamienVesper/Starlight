@@ -24,29 +24,24 @@ use Flarum\Frontend\Compiler\Source\SourceCollector;
 use TheTurk\Stargazing;
 
 return [
-    // (new Extend\Frontend('admin'))
-        // ->js(__DIR__ . '/js/dist/admin.js'),
     (new Extend\Frontend('forum'))
-        ->css(__DIR__ . '/less/forum.less'),
-        // ->content(Stargazing\Listeners\AddAssets::class),
-    (new Extend\Locales(__DIR__ . '/locale'))//,
-    // function (Application $app) {
-    //     $settings = $app['flarum.settings'];
-
-    //     $app->resolving('flarum.assets.forum', function (Assets $assets) use ($settings) {
-    //         $assets->css(function (SourceCollector $sources) use ($settings) {
-    //             $sources->addString(function () use ($settings) {
-    //                 $relocateSidebar = (bool)$settings->get('the-turk-stargazing-theme.relocateSidebar', true);
-
-    //                 $vars = [
-    //                     'config-right-sidebar' => $relocateSidebar ? 'true' : 'false',
-    //                 ];
-
-    //                 return array_reduce(array_keys($vars), function ($string, $name) use ($vars) {
-    //                     return $string."@$name: {$vars[$name]};";
-    //                 }, '');
-    //             });
-    //         });
-    //     });
-    // }
+        ->css(__DIR__.'/less/forum.less'),
+        ->js(__DIR__.'/js/dist/forum.js'),
+        ->content(function Document $document) {
+            $document->body[] = '
+            <script type="text/javascript" src="/assets/bubbly-bg.js"></script>
+            window.onload = function (e) {
+                bubbly({
+                    blur: 0.7,
+                    bubbleFunc: () => `hsla(${Math.random() * 360}, 0%, 100%, ${Math.random() * 0.3})`,
+                    bubbles: 120,
+                    colorStart: "#181520",
+                    colorStop: "#181520",
+                    shadowColor: "#fff7fe",
+                    radiusFunc:() => Math.random() * 2.5
+                });
+            }
+            ';
+        },
+        (new Extend\Locales(__DIR__ . '/locale'))
 ];
