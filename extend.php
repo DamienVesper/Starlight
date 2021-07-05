@@ -21,7 +21,6 @@ use Flarum\Extend;
 use Flarum\Foundation\Application;
 use Flarum\Frontend\Assets;
 use Flarum\Frontend\Compiler\Source\SourceCollector;
-use TheTurk\Stargazing;
 
 return [
     (new Extend\Frontend('forum'))
