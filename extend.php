@@ -25,22 +25,8 @@ use Flarum;
 return [
     (new Flarum\Extend\Frontend('forum'))
         ->css(__DIR__.'/less/forum.less')
-        ->js(__DIR__.'/js/dist/forum.js')
-        ->content(function($document) {
-            $document->body[] = '
-            <script type="text/javascript" src="/assets/bubbly-bg.js"></script>
-            window.onload = function (e) {
-                bubbly({
-                    blur: 0.7,
-                    bubbleFunc: () => `hsla(${Math.random() * 360}, 0%, 100%, ${Math.random() * 0.3})`,
-                    bubbles: 120,
-                    colorStart: "#181520",
-                    colorStop: "#181520",
-                    shadowColor: "#fff7fe",
-                    radiusFunc:() => Math.random() * 2.5
-                });
-            }
-            ';
-        }),
-        (new Flarum\Extend\Locales(__DIR__ . '/locale'))
+        ->js(__DIR__.'/js/dist/forum.js'),
+    (new Flarum\Extend\Frontend('admin'))
+        ->css(__DIR__.'/less/forum.less'),
+    (new Flarum\Extend\Locales(__DIR__ . '/locale'))
 ];
