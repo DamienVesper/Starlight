@@ -27,6 +27,6 @@ return [
         ->css(__DIR__.'/less/forum.less')
         ->js(__DIR__.'/js/dist/forum.js'),
     (new Flarum\Extend\Frontend('admin'))
-        ->css(__DIR__.'/less/forum.less'),
+        ->css(__DIR__.'/less/common/common.less'),
     (new Flarum\Extend\Locales(__DIR__ . '/locale'))
 ];
