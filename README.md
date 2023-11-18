@@ -17,7 +17,7 @@ composer require damienvesper/starlight:dev-master
 ### Fonts
 Append this to your custom stylesheet:
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Titillium+Web:wght@400;600;700&display=swap');
 ```
 
 ### Background
