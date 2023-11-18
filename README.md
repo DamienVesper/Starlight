@@ -6,16 +6,16 @@
 ## Installation
 Add the repository to your `composer.json`:
 ```sh
-composer config repositories.starlight vcs https://github.com/DamienVesper/Starlight
+composer config repositories.starlight vcs https://github.com/damienvesper/starlight
 ```
 
 Install the theme.
 ```sh
-composer require DamienVesper/Starlight:dev-master
+composer require damienvesper/starlight:dev-master
 ```
 
 ## Uninstallation
 To remove, the theme, simply run:
 ```sh
-composer remove DamienVesper/Starlight
+composer remove damienvesper/starlight
 ```
